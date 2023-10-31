@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bike-rent-py"
+version = "0.1.0"
+description = ""
+authors = ["gus-messagi <gustavo.ramos.messagi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.4.2"
+fastapi = "^0.104.0"
+pymongo = "^4.5.0"
+dependency-injector = "^4.41.0"
+python-dotenv = "^1.0.0"
+motor = "^3.3.1"
+uvicorn = "^0.23.2"
+
+
+[tool.poetry.scripts]
+start = "uvicorn src.main:app --reload"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
